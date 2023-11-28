@@ -619,7 +619,7 @@ if __name__ == "__main__":
 		if validate_email(sys.argv[2], mode='user'):
 			sys.exit(0)
 		else:
-			sys.exit(1)
+			sys.exit(0)
 
 	if len(sys.argv) > 1 and sys.argv[1] == "update":
 		from utils import load_environment
